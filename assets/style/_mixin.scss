@@ -1,0 +1,12 @@
+@mixin d-flex( $justContent:space-between, $aItem: center){
+    display:flex;
+    align-items: $aItem;
+    justify-content:$justContent;
+}
+
+@mixin btn{
+    padding: 14px 32px;
+    background-color: #3671E9;
+    border-radius: 32px;
+    border: none;
+}

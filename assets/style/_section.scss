@@ -1,0 +1,102 @@
+.section {
+    padding-top: 100px;
+  }
+  .section__top {
+    @include d-flex($justContent: center);
+  
+    &-box {
+      margin: 0 50px;
+      @include d-flex;
+      .section__top-text {
+        padding-left: 20px;
+        &-title {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 100%;
+          color: #ffffff;
+        }
+        &-subtitle {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0.01em;
+          color: #e0e0e0;
+        }
+      }
+    }
+  }
+  .details__form-button:active{
+    background-color:#0D0D2B;
+    opacity: 0.2;
+  }
+  .section__top-box-img:hover{
+    transform: rotate(360deg);
+    transition: 1.5s;
+  }
+  
+  .section__bottom {
+    @include d-flex;
+    
+    margin-top: 50px;
+    &-left{
+      padding-right: 200px;
+    }
+    &-right {
+      &-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 170%;
+        color: #ffffff;
+      }
+      &-subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        width: 350px;
+      }
+    }
+  }
+  
+  .section__bottom-right-button {
+    margin-top: 25px;
+    @include btn;
+    width: 146px;
+    height: 59px;
+    .button__text {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 100%;
+      text-align: center;
+      color: #ffffff;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+  
+  .section__bottom-right-button:active{
+    opacity: 0.2;
+  }
+  .section__bottom-left{
+    background-image: url("../images/bg-img/svg3.svg");
+    background-repeat: no-repeat;
+  
+  }
+  
+  .section__bottom-right{
+    background-image: url("../images/bg-img/D.svg");
+    background-repeat: no-repeat;
+  }
+  

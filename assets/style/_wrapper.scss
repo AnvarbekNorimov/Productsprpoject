@@ -1,0 +1,225 @@
+.Wrapper {
+    background-color: #2b076e;
+  }
+  
+  .wrapper__title {
+    padding-top: 50px;
+    width: 700px;
+    padding-left: 225px;
+    &-text {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .wrapper__boxs {
+    @include d-flex;
+    padding-top: 50px;
+  }
+  
+  .wrapper__boxs-left {
+    &-title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 29px;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
+    &-subtitle {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #e0e0e0;
+      width: 360px;
+      padding-bottom: 5px;
+    }
+    &-button {
+      @include btn;
+      width: 142px;
+      height: 45px;
+      .button__text {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+  .wrapper__boxs-left-button:active{
+    background-color: #35068c;
+    color: #060000;
+    box-shadow: #050505;
+  }
+  
+  .wrapper__boxs-right {
+    background-color: #35068c;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    margin-top: 50px;
+    .wrapper__boxs-right-img1 {
+      padding-top: 30px;
+      padding-left: 22px;
+    }
+    .wrapper__boxs-right-img2 {
+      padding-top: 15px;
+      padding-left: 22px;
+      margin-bottom: 22px;
+    }
+  }
+  
+  .boxs__right-tagline {
+    @include d-flex;
+  
+    .boxs-right-title {
+      width: 130px;
+      height: 140px;
+      background-color: #491f98;
+      border-radius: 10px;
+      padding: 7px 10px;
+      position: relative;
+      bottom: 40px;
+      left: 40px;
+    }
+    .boxs-right-text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      margin: 0;
+    }
+    .boxs-right-textera {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      margin: 0;
+    }
+    .boxs-right-btextera {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: #f2f2f2;
+    }
+  
+    .boxs-right-subtitle {
+      width: 130px;
+      height: 60px;
+      background-color: #491f98;
+      border-radius: 10px;
+      padding: 7px 10px;
+      position: relative;
+      bottom: 65px;
+      right: 50px;
+    }
+  }
+  
+  .statistic {
+    margin-top: 100px;
+    @include d-flex(space-evenly);
+    .srtatistic__left {
+      position: relative;
+      right: 100px;
+    }
+    .ststistic__right {
+      &-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+      &-subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        width: 360px;
+      }
+      &-button {
+        @include btn;
+        width: 142px;
+        height: 50px;
+        .button__text {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .ststistic__right-button:active{
+    background-color: #8f5fe7;
+    transform: scale(1.05);
+    color: #060000;
+  }
+  
+  .aside {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    @include d-flex;
+  
+    .asside__left {
+      &-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #ffffff;
+        width: 450px;
+      }
+      &-subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        width: 350px;
+      }
+      &-button {
+        @include btn;
+        width: 142px;
+        height: 50px;
+        .button__text {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 150%;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .asside__left-button:active{
+    transform: scale(1.03);
+    background-color: #ffffff;
+  }
+  

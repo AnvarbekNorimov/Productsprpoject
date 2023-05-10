@@ -1,0 +1,120 @@
+.page {
+    &__title {
+      width: 741px;
+      height: 120px;
+      padding-left: 205px;
+      .page__subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: center;
+        color: #0d0d2b;
+      }
+    }
+  }
+  .page__boxs {
+    margin: 50px 100px;
+    @include d-flex;
+    width: 950px;
+  }
+  
+  .page__box {
+    width: 300px;
+    height: 350px;
+    box-shadow: 1px 5px 5px #8f8e91;
+    background: #ffffff;
+    backdrop-filter: blur(125px);
+    border-radius: 16px;
+    text-align: center;
+    transition: 1s;
+    &-img {
+      padding: 20px;
+    }
+    &-text {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      text-align: center;
+      color: #000000;
+      &-desc {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #040404;
+        opacity: 0.7;
+      }
+    }
+    &-textera {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30x;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #0d0d0d;
+      width: 250px;
+      padding: 0 20px;
+    }
+    &-button {
+      margin: 45px 45px;
+      @include d-flex;
+      @include btn;
+      width: 200px;
+      height: 64px;
+      .button__text {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+        flex: none;
+        padding-right: 10px;
+      }
+    }
+    .page__box-img{
+     border: #000000;
+    }
+    .page__box-icon{
+      margin-top: 35px;
+      border-radius: 50px;
+      border: 2px solid rgba(43, 7, 110, 0.2);
+    }
+  }
+  
+  .page__box:hover {
+    background-color: #2b076e;
+    cursor: pointer;
+    .page__box-icon{
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+    .page__box-img{
+      transform: rotateY(360deg);
+      transition: 1s;
+    }
+    .page__box-pic{
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+  }
+  .page__box:hover > .page__box-text {
+    color: #f5f3f3;
+  
+    .page__box-text-desc {
+      color: #ffffff;
+    }
+  }
+  .page__box:hover >.page__box-textera{
+      color: #f5f3f3;
+  }
+  

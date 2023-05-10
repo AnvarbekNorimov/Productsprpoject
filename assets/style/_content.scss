@@ -1,0 +1,71 @@
+.content {
+    background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
+    padding-bottom: 50px;
+  }
+  
+  .holder {
+    width: 1000px;
+    height: 200px;
+    background-color: #3671e9;
+    @include d-flex;
+    border-radius: 10px;
+  }
+  .holder__left {
+    &-title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 150%;
+      color: #ffffff;
+      mix-blend-mode: normal;
+    }
+    &-subtitle {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      width: 320px;
+    }
+  }
+  .holder__right {
+    &-input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      background-color: #3671e9;
+      color: #ffffff;
+      width: 300px;
+      padding-right: 20px;
+    }
+    &-input::placeholder {
+      color: #ffffff;
+    }
+  
+    &-button {
+      width: 152px;
+      height: 55px;
+      background: #ffffff;
+      border-radius: 32px;
+      border: none;
+      .button__text {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #0d0d2b;
+      }
+    }
+  }
+  .holder__right-button:active{
+    transform: scale(1.04);
+    opacity: 0.5;
+  }
+  
